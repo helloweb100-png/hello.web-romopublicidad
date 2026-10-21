@@ -850,6 +850,20 @@ button { cursor: pointer; }
     .hs__bar i { display: block; height: 100%; background: var(--grad); transform-origin: 0 50%; transform: scaleX(0); }
 }
 
+/* ---------- 11b · SERVICIOS ---------- */
+.services .sec__head { margin-bottom: clamp(32px, 5vw, 56px); }
+.services .facts { margin-top: 0; }
+.services .fact { display: flex; flex-direction: column; align-items: flex-start; }
+.services .fact p { margin-bottom: 22px; }
+.services .fact .btn { margin-top: auto; }
+
+@media (min-width: 640px) {
+    .services .facts { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1100px) {
+    .services .facts { grid-template-columns: repeat(4, 1fr); }
+}
+
 /* ---------- 12 · PROCESO ---------- */
 .process__grid { display: grid; gap: 48px; align-items: start; }
 .process__frame {
