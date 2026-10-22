@@ -45,6 +45,16 @@
         "image": "img/web/cintas-fila.webp",
         "telephone": "+525510122744",
         "email": "Romopublicidadventas@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Av. Pdte. Plutarco Elías Calles 717",
+            "addressLocality": "Iztacalco",
+            "addressRegion": "CDMX",
+            "postalCode": "08210",
+            "addressCountry": "MX"
+        },
+        "geo": { "@type": "GeoCoordinates", "latitude": 19.3982086, "longitude": -99.1271323 },
+        "hasMap": "https://maps.app.goo.gl/1SDU1fHvxYnLoAMx8",
         "areaServed": "MX",
         "sameAs": [
             "https://www.facebook.com/share/1Cfj3ZUUbx/",
@@ -130,6 +140,7 @@
         <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 6h18v12H3zM3 7l9 7 9-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
         <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
         <symbol id="i-screen" viewBox="0 0 24 24"><path d="M4 5h16v14H4zM4 9.7h16M4 14.3h16M9.3 5v14M14.7 5v14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+        <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.500a7 7 0 0 1 14 0C19 14.800 12 21 12 21zM12 12.500a2.500 2.500 0 1 0 0-5 2.500 2.500 0 0 0 0 5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
         <symbol id="i-print" viewBox="0 0 24 24"><path d="M7 8V4h10v4M7 17H5a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-2M7 14h10v6H7z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 
         <!-- Iconos de marca (rellenos) -->
@@ -917,6 +928,7 @@
                 <li data-reveal="left" style="--i:1"><a class="ccard" href="mailto:Romopublicidadventas@gmail.com"><span class="ccard__ic"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg></span><span><small>Correo</small><b>Romopublicidadventas<wbr>@gmail.com</b></span><svg class="ic ccard__go" aria-hidden="true"><use href="#i-arrow-ur"/></svg></a></li>
                 <li data-reveal="left" style="--i:2"><a class="ccard" href="https://www.facebook.com/share/1Cfj3ZUUbx/" target="_blank" rel="noopener"><span class="ccard__ic"><svg class="ic" aria-hidden="true"><use href="#i-fb"/></svg></span><span><small>Facebook</small><b>Yosep Romo Ramirez</b></span><svg class="ic ccard__go" aria-hidden="true"><use href="#i-arrow-ur"/></svg></a></li>
                 <li data-reveal="left" style="--i:3"><a class="ccard" href="https://www.tiktok.com/@yosepromoramirez" target="_blank" rel="noopener"><span class="ccard__ic"><svg class="ic" aria-hidden="true"><use href="#i-tt"/></svg></span><span><small>TikTok</small><b>@yosepromoramirez</b></span><svg class="ic ccard__go" aria-hidden="true"><use href="#i-arrow-ur"/></svg></a></li>
+                <li data-reveal="left" style="--i:4"><a class="ccard" href="https://maps.app.goo.gl/1SDU1fHvxYnLoAMx8" target="_blank" rel="noopener"><span class="ccard__ic"><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg></span><span><small>Ubicación</small><b>Av. Pdte. Plutarco Elías Calles 717, Iztacalco</b></span><svg class="ic ccard__go" aria-hidden="true"><use href="#i-arrow-ur"/></svg></a></li>
             </ul>
         </div>
 
@@ -974,6 +986,22 @@
             </form>
         </div>
     </div>
+
+    <div class="container">
+        <div class="loc" id="ubicacion" data-reveal="up">
+            <div class="loc__info">
+                <p class="pill">Visítanos</p>
+                <h3 class="loc__title">Encuéntranos en Iztacalco</h3>
+                <address class="loc__addr">Av. Pdte. Plutarco Elías Calles 717,<br>Iztacalco, 08210, CDMX</address>
+                <a class="btn btn--primary btn--lg" href="https://maps.app.goo.gl/1SDU1fHvxYnLoAMx8" target="_blank" rel="noopener">
+                    <svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg><span>Cómo llegar</span><svg class="ic ic--end" aria-hidden="true"><use href="#i-arrow-ur"/></svg>
+                </a>
+            </div>
+            <div class="loc__map">
+                <iframe title="Mapa con la ubicación de Romo Publicidad en Iztacalco, CDMX" src="https://www.google.com/maps?q=19.3982086,-99.1271323&z=17&hl=es&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
 </section>
 
 </main>
@@ -1017,6 +1045,7 @@
             <a href="mailto:Romopublicidadventas@gmail.com">Romopublicidadventas<wbr>@gmail.com</a>
             <a href="https://www.facebook.com/share/1Cfj3ZUUbx/" target="_blank" rel="noopener">Facebook</a>
             <a href="https://www.tiktok.com/@yosepromoramirez" target="_blank" rel="noopener">TikTok</a>
+            <a href="https://maps.app.goo.gl/1SDU1fHvxYnLoAMx8" target="_blank" rel="noopener">Av. Pdte. Plutarco Elías Calles 717, Iztacalco, CDMX</a>
         </div>
     </div>
     <div class="container ftr__bottom">
